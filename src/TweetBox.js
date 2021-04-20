@@ -11,10 +11,10 @@ function TweetBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      username: "happystark",
-      displayName: "Atharva Deosthale",
+      username: "VeryRealUserAccount",
+      displayName: "Hamish Fleming",
       avatar:
-        "https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-1/c0.33.200.200a/p200x200/51099653_766820610355014_8315780769297465344_o.jpg?_nc_cat=101&_nc_sid=7206a8&_nc_ohc=c1qBHkwAgVsAX8KynKU&_nc_ht=scontent-bom1-1.xx&oh=340b05bea693dd1671296e0c2d004bb3&oe=5F84CA62",
+        "https://www.pngfind.com/pngs/m/53-533721_reeeeee-reeee-icon-hd-png-download.png",
       verified: true,
       text: tweetMessage,
       image: tweetImage,
@@ -28,7 +28,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-1/c0.33.200.200a/p200x200/51099653_766820610355014_8315780769297465344_o.jpg?_nc_cat=101&_nc_sid=7206a8&_nc_ohc=c1qBHkwAgVsAX8KynKU&_nc_ht=scontent-bom1-1.xx&oh=340b05bea693dd1671296e0c2d004bb3&oe=5F84CA62" />
+          <Avatar src="https://www.pngfind.com/pngs/m/53-533721_reeeeee-reeee-icon-hd-png-download.png" />
           <input
             value={tweetMessage}
             onChange={(e) => setTweetMessage(e.target.value)}
