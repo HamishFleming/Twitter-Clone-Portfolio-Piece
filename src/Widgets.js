@@ -6,9 +6,11 @@ import {
   TwitterTweetEmbed,
 } from "react-twitter-embed";
 import "./Widgets.css";
+import MediaQuery from 'react-responsive';
 
 function Widgets() {
   return (
+      <MediaQuery minWidth={1100}>
     <div className="widgets">
       <div className="widgets__input">
         <Search className="widgets__searchIcon" />
@@ -29,6 +31,7 @@ function Widgets() {
         />
       </div>
     </div>
+      </MediaQuery>
   );
 }
 

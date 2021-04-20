@@ -11,6 +11,8 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
+import MediaQuery from 'react-responsive'
+
 
 function Sidebar() {
   return (
@@ -24,10 +26,11 @@ function Sidebar() {
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
-
+      <MediaQuery minWidth={1000}>
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
+      </MediaQuery>
     </div>
   );
 }
