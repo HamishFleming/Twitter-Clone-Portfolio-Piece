@@ -5,7 +5,7 @@
 .post {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid var(--twitter-backgroung);
+  border-bottom: 1px solid #e6ecf0; /*var(--twitter-backgroung);*/
 }
 .post__footer {
   display: flex;
